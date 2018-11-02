@@ -11,28 +11,42 @@ main
 
             .caja
             {
-                p
+                .score
                 {
-                    font-size: 14px;
-                    font-family: arial;
-                    color: white;   
+                    margin: 18px;
                     padding: 6px;
-                    background-color: blue;
-                    border-radius: 5px;
-                    width: 60%;
-                    height: 16px;
-                    margin: auto;
+                    opacity: 0.8;
+                    background-color:white;
+                    width: 150px;
+                    height: 20px; 
                 }
 
-                transition: 0.15s;
-                outline: 0px;
-                border: 0px;
-                border-radius: 5px;    
+                .features
+                {
+                    margin: 18px;
+                    padding: 6px;
+                    opacity: 0.8;
+                    background-color:white;
+                    width: 150px;
+                    height: 40px; 
+                }
+
+                .avatar
+                {
+                    margin: 18px;
+                    padding: 6px;
+                    opacity: 0.8;
+                    background-color:white;
+                    width: 150px;
+                    height: 140px; 
+                }
+
+                transition: 0.15s;  
                 background-color: black;    
                 display: inline-block;
-                margin: 2px;
-                width: 150px;
-                height: 150px;
+                margin: 1px;
+                width: 200px;
+                height: 310px;
             }
 
             text-align: center;
