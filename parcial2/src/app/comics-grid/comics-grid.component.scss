@@ -1,0 +1,53 @@
+main
+{
+    div
+    {
+        #comics
+        {
+            .caja:hover
+            {
+                background: green;
+            }
+
+            .caja
+            {
+                p
+                {
+                    font-size: 14px;
+                    font-family: arial;
+                    color: white;   
+                    padding: 6px;
+                    background-color: blue;
+                    border-radius: 5px;
+                    width: 60%;
+                    height: 16px;
+                    margin: auto;
+                }
+
+                transition: 0.15s;
+                outline: 0px;
+                border: 0px;
+                border-radius: 5px;    
+                background-color: black;    
+                display: inline-block;
+                margin: 2px;
+                width: 150px;
+                height: 150px;
+            }
+
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        #titulo
+        {
+            color: black;
+            font-family: arial;
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        margin: 110px auto;
+    }
+}
