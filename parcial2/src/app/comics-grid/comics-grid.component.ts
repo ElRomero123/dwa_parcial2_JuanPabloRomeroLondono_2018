@@ -13,6 +13,9 @@ export class ComicsGridComponent implements OnInit
 {
   public document;
   public _httpService;
+  public Score1; public Score2; public Score3; public Score4; public Score5; public Score6; public Score7; public Score8;
+  public Score9; public Score10; public Score11; public Score12; public Score13; public Score14; public Score15; public Score16;
+  public Score17; public Score18; public Score19; public Score20;
   constructor(private servicioComic:ComicService, private servicioComicWith:ComicSpecifiedService) 
   { 
     
@@ -44,6 +47,27 @@ export class ComicsGridComponent implements OnInit
 
   ngOnInit() 
   {
+    this.Score1 = 0;
+    this.Score2 = 0;
+    this.Score3 = 0;
+    this.Score4 = 0;
+    this.Score5 = 0;
+    this.Score6 = 0;
+    this.Score7 = 0;
+    this.Score8 = 0;
+    this.Score9 = 0;
+    this.Score10 = 0;
+    this.Score11 = 0;
+    this.Score12 = 0;
+    this.Score13 = 0;
+    this.Score14 = 0;
+    this.Score15 = 0;
+    this.Score16 = 0;
+    this.Score17 = 0;
+    this.Score18 = 0;
+    this.Score19 = 0;
+    this.Score20 = 0;
+
     this.servicioComic.getComics().subscribe(
       result => 
       {

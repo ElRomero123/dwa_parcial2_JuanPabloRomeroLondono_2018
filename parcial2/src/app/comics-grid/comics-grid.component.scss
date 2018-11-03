@@ -13,16 +13,31 @@ main
             {
                 .score
                 {
-                    div
+                    p
                     {
-                        margin: 1px;
+                        display: inline-block;
                         color: black;
+                    }
+
+                    button:hover
+                    {
+                        filter: invert(100%);
+                    }
+
+                    button
+                    {
+                        transition: 0.15s;
+                        background-color: black;
+                        border: 0px;
+                        margin: 1px;
+                        color: white;
                         font-family: 'Times New Roman', Times, serif;
                         font-family: 14px;
                         display: inline-block;
+                        vertical-align: middle;
                     }
                     
-                    height: 20px; 
+                    height: 35px; 
                 }
 
                 .features
