@@ -2,8 +2,9 @@
   <div>
     <p id='titulo'>Comics encontrados</p>
 
-    <div id='comics' >
-        <div class='caja' *ngFor = 'let comic of document.results'> <div class='avatar'></div> <div class='features'> <p class='title'> {{comic.title}} </p> <p class='post'> {{comic.dates[1].date}}</p> </div> <div class='score'></div> </div>  
+      <div id='comics' >
+        <div class='caja' *ngFor = 'let comic of document.results'> <div class='avatar' style="background: url('{{comic.thumbnail.path}}')"></div> <div class='features'> <p class='title'> {{comic.title}} </p> <p class='post'> {{comic.dates[0].date}}</p> </div> <div class='score'></div> </div>  
+        
       </div>
   </div>
 </main>
