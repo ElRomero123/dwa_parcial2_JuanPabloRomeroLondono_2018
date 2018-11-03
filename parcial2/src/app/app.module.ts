@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComicsGridComponent } from './comics-grid/comics-grid.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ComicsHeaderComponent } from './comics-header/comics-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComicsGridComponent
+    ComicsGridComponent,
+    ComicsHeaderComponent
   ],
   imports: [
     BrowserModule,
