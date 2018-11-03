@@ -1,14 +1,21 @@
 <main>
   <div>
-    <p id="titulo">Comics Encontrados</p>
+    <p id='titulo'>Comics encontrados</p>
 
-    <div id="comics" >
-        <div class="caja"> <div class="avatar"></div> <div class="features"></div> <div class="score"></div> </div>
-        <div class="caja"> <div class="avatar"></div> <div class="features"></div> <div class="score"></div> </div>
-        <div class="caja"> <div class="avatar"></div> <div class="features"></div> <div class="score"></div> </div>
-        <div class="caja"> <div class="avatar"></div> <div class="features"></div> <div class="score"></div> </div>
-        <div class="caja"> <div class="avatar"></div> <div class="features"></div> <div class="score"></div> </div>
-        <div class="caja"> <div class="avatar"></div> <div class="features"></div> <div class="score"></div> </div>
-    </div>
+    <div id='comics' >
+        <div class='caja' *ngFor = 'let comic of document.results'> <div class='avatar'></div> <div class='features'> <p class='title'> {{comic.title}} </p> <p class='post'> {{comic.dates[1].date}}</p> </div> <div class='score'></div> </div>  
+      </div>
   </div>
 </main>
+
+<!--
+  *ngFor = 'let comic of document.results'
+  *ngFor = 'let user of result'
+  <div class='caja' > <div class='avatar'></div> <div class='features'> <p class='title'>{{comic.title}}</p> <p class='post'>{{comic.title}}</p> </div> <div class='score'></div> </div>
+      
+  <div class='caja'> <div class='avatar'></div> <div class='features'> <p class='title'>Titulo</p> <p class='post'>Publicación</p> </div> <div class='score'></div> </div>
+  <div class='caja'> <div class='avatar'></div> <div class='features'> <p class='title'>Titulo</p> <p class='post'>Publicación</p> </div> <div class='score'></div> </div>
+  <div class='caja'> <div class='avatar'></div> <div class='features'> <p class='title'>Titulo</p> <p class='post'>Publicación</p> </div> <div class='score'></div> </div>
+  <div class='caja'> <div class='avatar'></div> <div class='features'> <p class='title'>Titulo</p> <p class='post'>Publicación</p> </div> <div class='score'></div> </div>
+  *ngFor = 'let comic in result.data.results'
+-->
