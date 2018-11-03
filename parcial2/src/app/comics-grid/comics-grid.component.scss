@@ -1,0 +1,104 @@
+main
+{
+    div
+    {
+        #comics
+        {
+            .caja:hover
+            {
+                background: green;
+            }
+
+            .caja
+            {
+                .score
+                {
+                    p
+                    {
+                        display: inline-block;
+                        color: black;
+                    }
+
+                    button:hover
+                    {
+                        filter: invert(100%);
+                    }
+
+                    button
+                    {
+                        transition: 0.15s;
+                        background-color: black;
+                        border: 0px;
+                        margin: 1px;
+                        color: white;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-family: 14px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    
+                    height: 35px; 
+                }
+
+                .features
+                {
+                    .post
+                    {
+                        font-size: 12px;
+                    }
+
+                    .title
+                    {
+                        font-size: 14px;
+                    }
+
+                    p
+                    {
+                        color:black;
+                        margin: 1px;
+                        font-family: arial; 
+                    }
+
+                    background-color:white;
+                    height: 110px; 
+                }
+
+                .avatar
+                {
+                    height: 140px; 
+                }
+
+                div
+                {
+                    opacity: 0.8;
+                    background-color:white;
+                    padding: 6px;
+                    margin: 18px;
+                    width: 150px;    
+                }
+
+                vertical-align: middle;
+                transition: 0.15s;  
+                background-color: black;    
+                display: inline-block;
+                margin: 1px;
+                width: 200px;
+                height: 380px;
+            }
+
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        #titulo
+        {
+            color: black;
+            font-family: arial;
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        margin: 110px auto;
+    }
+}

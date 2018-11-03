@@ -1,0 +1,9 @@
+<main>
+  <div>
+    <p id='titulo'>Comics encontrados</p>
+
+      <div id='comics' >
+        <div class='caja' *ngFor = 'let comic of document.results; let i = index;' id="{{i}}">  <div class='avatar' style="background: url('{{comic.thumbnail.path}}')"></div> <div class='features'> <p class='title'> {{comic.title}} </p> <p class='post'> {{comic.dates[0].date}}</p> </div> <div class='score'> <button (click) = "Score1 = Score1 + 1">↑</button> <p>{{ Score1 }}</p> <button (click) = "Score1 = Score1 - 1">↓</button> </div> </div>  
+      </div>
+  </div>
+</main>
